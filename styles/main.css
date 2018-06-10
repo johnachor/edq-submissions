@@ -1,3 +1,41 @@
 body {
-  background-color: aquamarine;
+  background-color: black;
+  color: lightgrey;
+  text-align: center;
+}
+
+.page-header {
+  max-width: 100%;
+}
+
+.navbar-brand {
+  padding: 0;
+}
+
+.navbar-brand img {
+  max-height: 100%;
+}
+
+.navbar-inverse {
+  background-color: black;
+}
+
+.navbar-collapse.collapse {
+  display: block!important;
+}
+
+.navbar-nav>li, .navbar-nav, .navbar-header {
+  float: left !important;
+}
+
+.navbar-nav.navbar-right:last-child {
+  margin-right: -15px !important;
+}
+
+.navbar-right {
+  float: right!important;
+}
+
+.main-view {
+  padding-top: 50px;
 }
