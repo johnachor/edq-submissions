@@ -1,0 +1,5 @@
+dist/
+build/
+lib/node_modules
+/db/apiKeys.json
+*firebase*
