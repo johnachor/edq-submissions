@@ -9,7 +9,8 @@
   <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
     crossorigin="anonymous"></script>
-  <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-database.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
     crossorigin="anonymous">
   <link rel="stylesheet" href="/styles/main.css">
@@ -25,14 +26,8 @@
         </a>
       </div>
       <ul class="nav navbar-nav navbar-right">
-        <li class="hide" id="my-suggestions-link">
-          <a href="#">My Suggestions</a>
-        </li>
-        <li class="hide" id="logout-link">
-          <a href="#">Logout</a>
-        </li>
-        <li id="login-link">
-          <a href="#">Login</a>
+        <li class="hide" id="admin-link">
+          <a href="#">Admin</a>
         </li>
       </ul>
     </div>
@@ -59,6 +54,7 @@
       </div>
     </div>
   </div>
+
   <script src="/dist/app.js"></script>
 </body>
 
