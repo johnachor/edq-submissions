@@ -17,7 +17,10 @@ $('#submit-suggestion').click(() => {
     };
     firebaseApi.addSubmission(submission)
       .catch(err => alert(err.message))
-      .then(alert('Submission accepted!'));
+      .then(() => {
+        $('#question').val('');
+        alert('Submission accepted!');
+      });
   } else {
     alert('Please enter some text into the suggestion field.');
   }
