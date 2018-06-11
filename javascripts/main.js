@@ -4,7 +4,7 @@ firebaseApi.initialize();
 
 $('#clear-suggestion').click(() => {
   $('#question').val('');
-  console.log(firebaseApi.firebaseConfig);
+  $('#submitter-name').val('');
 });
 
 $('#submit-suggestion').click(() => {
@@ -12,6 +12,7 @@ $('#submit-suggestion').click(() => {
   if (text.length > 0) {
     const submission = {
       timestamp: Date.now(),
+      name: $('#submitter-name').val(),
       text: $('#question').val(),
     };
     firebaseApi.addSubmission(submission)
